@@ -11,38 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="header-navigation">
-        <a lang="en" href="" class="header-logo-web link"
-          >Web<span class="header-logo-studio link">Studio</span>
-        </a>
-        <ul class="header-list list">
-          <li class="header-item"><a class="header-studio link" href="">Студия</a></li>
-          <li class="header-item">
-            <a class="header-potfolio link" href="./portfolio.html">Портфолио</a>
+      <div class="container">
+        <nav class="header-navigation">
+          <a lang="en" href="" class="header-logo-web link"
+            >Web<span class="header-logo-studio link">Studio</span>
+          </a>
+          <ul class="header-list list">
+            <li class="header-item"><a class="header-studio link" href="">Студия</a></li>
+            <li class="header-item">
+              <a class="header-potfolio link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item"><a class="header-contact link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-right list">
+          <li class="header-right-item">
+            <a class="header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="header-item"><a class="header-contact link" href="">Контакты</a></li>
+          <li class="header-right-item">
+            <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-right list">
-        <li>
-          <a class="header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
-      <section class="peculiarities">
+      <section class="peculiarities container">
         <ul class="peculiarities-list list">
           <li class="peculiarities-main">
             <h3 class="peculiarities-main-title">Внимание к деталям</h3>
@@ -70,7 +79,7 @@
           </li>
         </ul>
       </section>
-      <section class="doing">
+      <section class="doing container">
         <h2 class="doing-title">Чем мы занимаемся</h2>
         <ul class="doing-image list">
           <li class="doing-image-pictures">
@@ -84,11 +93,12 @@
           </li>
         </ul>
       </section>
-      <section class="team">
+      <section class="team container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-worker list">
           <li class="team-worker-about">
             <img
+              class="cards-workers"
               src="./images/team/demyanenko.jpg"
               alt="Игорь Демьяненко"
               width="270"
@@ -98,24 +108,42 @@
             <p class="team-worker-function" lang="en">Product Designer</p>
           </li>
           <li class="team-worker-about">
-            <img src="./images/team/repina.jpg" alt="Ольга Репина" width="270" height="260" />
+            <img
+              class="cards-workers"
+              src="./images/team/repina.jpg"
+              alt="Ольга Репина"
+              width="270"
+              height="260"
+            />
             <h3 class="team-worker-about-name">Ольга Репина</h3>
             <p class="team-worker-function" lang="en">Frontend Developer</p>
           </li>
           <li class="team-worker-about">
-            <img src="./images/team/tarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
+            <img
+              class="cards-workers"
+              src="./images/team/tarasov.jpg"
+              alt="Николай Тарасов"
+              width="270"
+              height="260"
+            />
             <h3 class="team-worker-about-name">Николай Тарасов</h3>
             <p class="team-worker-function" lang="en">Marketing</p>
           </li>
           <li class="team-worker-about">
-            <img src="./images/team/ermakov.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            <img
+              class="cards-workers"
+              src="./images/team/ermakov.jpg"
+              alt="Михаил Ермаков"
+              width="270"
+              height="260"
+            />
             <h3 class="team-worker-about-name">Михаил Ермаков</h3>
             <p class="team-worker-function" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a lang="en" href="" class="footer-logo-web link"
         >Web<span class="footer-logo-studio link">Studio</span>
       </a>
