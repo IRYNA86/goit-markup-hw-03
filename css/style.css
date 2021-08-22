@@ -32,8 +32,6 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 47px;
-  padding-bottom: 47px;
   margin: 0 auto;
 }
 /*-----HEADER--- */
@@ -73,6 +71,8 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -81,6 +81,8 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
@@ -89,12 +91,16 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 .header-studio-second {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -102,6 +108,8 @@ ul {
 .header-potfolio {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -109,6 +117,8 @@ ul {
 .header-potfolio-second {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -116,6 +126,8 @@ ul {
 .header-contact {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -123,6 +135,8 @@ ul {
 .header-email {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -136,6 +150,8 @@ ul {
 .header-tel {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -148,8 +164,10 @@ ul {
 }
 /*----HERO----*/
 .hero {
-  width: 1600px;
-  background-color: #2f303a;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2e3046;
 }
 .hero-title {
   font-weight: 900;
@@ -190,6 +208,10 @@ ul {
   background-color: #188ce8;
 }
 /*-----Peculiarities-----*/
+.peculiarities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .peculiarities-list {
   display: flex;
 }
@@ -212,7 +234,7 @@ ul {
 }
 /*----MAIN-BUTTONS-AND-PROJECTS----*/
 .main-buttons {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 50px;
 }
 .main-buttons-list {
@@ -252,11 +274,10 @@ ul {
   cursor: pointer;
 }
 .main-projects {
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 .projects-list {
   display: flex;
-  padding-top: 0px;
   flex-wrap: wrap;
   flex-basis: calc (100%/3);
   margin-left: -30px;
@@ -283,6 +304,9 @@ ul {
   letter-spacing: 0.03em;
 }
 /*----DOING-----*/
+.doing {
+  padding-bottom: 94px;
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -294,16 +318,18 @@ ul {
 }
 .doing-image {
   display: flex;
-  padding-bottom: 47px;
 }
 .doing-image .doing-image-pictures:not(:first-child) {
   margin-left: 30px;
 }
 /*---TEAM----*/
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  padding-top: 47px;
   margin-bottom: 50px;
   line-height: 1.17;
   text-align: center;
@@ -316,12 +342,15 @@ ul {
 .team-worker .team-worker-about:not(:first-child) {
   margin-left: 30px;
 }
-.cards-workers {
-  margin-bottom: 30px;
-}
 .team-worker-about {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.name-function-worker {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-worker-about-name {
   font-weight: 500;
@@ -335,13 +364,12 @@ ul {
 .team-worker-function {
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 }
 /*----FOOTER----*/
 .footer {
-  padding: 60px 0px 60px 15px;
+  padding: 60px 0px;
   background-color: #2f303a;
 }
 .footer-logo-web {
