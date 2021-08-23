@@ -54,7 +54,10 @@ ul {
 }
 .header-right {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
+  margin-right: auto;
 }
 .header-list .header-item:not(:last-child) {
   margin-right: 50px;
@@ -71,8 +74,8 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -81,8 +84,8 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
@@ -126,8 +129,6 @@ ul {
 .header-contact {
   font-weight: 500;
   font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -135,8 +136,6 @@ ul {
 .header-email {
   font-weight: 500;
   font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -150,8 +149,6 @@ ul {
 .header-tel {
   font-weight: 500;
   font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -214,8 +211,11 @@ ul {
 }
 .peculiarities-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
-.peculiarities-list .peculiarities-main:not(:first-child) {
+.peculiarities-list > .peculiarities-main {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 .peculiarities-main-title {
@@ -279,17 +279,19 @@ ul {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc (100%/3);
   margin-left: -30px;
   margin-top: -30px;
 }
 .projects-list .projects-information {
+  flex-basis: calc (100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 .cards-name {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .projects-name {
   font-weight: 700;
@@ -373,10 +375,13 @@ ul {
   background-color: #2f303a;
 }
 .footer-logo-web {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-logo-web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  margin-bottom: 20px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
