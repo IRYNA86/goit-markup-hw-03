@@ -273,10 +273,6 @@ ul {
   color: var(--second-title-color);
   cursor: pointer;
 }
-projects-cards {
-  display: block;
-  max-width: 100%;
-}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -288,10 +284,14 @@ projects-cards {
   margin-left: 30px;
   margin-top: 30px;
 }
+.projects-cards {
+  display: block;
+  max-width: 100%;
+}
 .cards-name {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 .projects-name {
