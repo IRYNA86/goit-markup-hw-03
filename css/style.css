@@ -54,10 +54,7 @@ ul {
 }
 .header-right {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
-  margin-right: auto;
 }
 .header-list .header-item:not(:last-child) {
   margin-right: 50px;
@@ -141,6 +138,7 @@ ul {
   color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 .header-email:hover,
 .header-email:focus {
@@ -154,6 +152,7 @@ ul {
   color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -235,12 +234,13 @@ ul {
 /*----MAIN-BUTTONS-AND-PROJECTS----*/
 .main-buttons {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 .main-buttons-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .main-buttons-item .main-button-other {
   margin-left: 8px;
@@ -273,8 +273,9 @@ ul {
   color: var(--second-title-color);
   cursor: pointer;
 }
-.main-projects {
-  padding-bottom: 94px;
+projects-cards {
+  display: block;
+  max-width: 100%;
 }
 .projects-list {
   display: flex;
@@ -328,6 +329,7 @@ ul {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .team-title {
   font-weight: 700;
